@@ -1,0 +1,28 @@
+li.parent-drop {
+    position: relative;
+
+    & .dropdown {
+        display: none;
+        background-color: $bianco;
+        & ul {
+            @include flex(column, flex-start, left, nowrap);
+            list-style: none;
+            position: absolute;
+            top: 50px;
+            & li {
+                padding: $paddingBase;
+                &:hover {
+                    background-color: $bianco;
+                }
+            }
+        }
+    }
+
+    &:hover, &:focus{
+        .dropdown {
+            display: block;
+        }
+    }
+
+
+}

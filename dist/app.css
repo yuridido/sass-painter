@@ -61,6 +61,7 @@ body {
 }
 
 #head-bottom {
+  height: 50px;
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
@@ -73,7 +74,7 @@ body {
   width: 90px;
 }
 
-#head-bottom ul {
+#head-bottom #nav {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -82,8 +83,47 @@ body {
   flex-wrap: nowrap;
 }
 
-#head-bottom ul li {
-  padding: 10px 25px;
+#head-bottom #nav li {
+  padding: 20px 25px;
+}
+
+/*DROPDOWN*/
+
+li.parent-drop {
+  position: relative;
+}
+
+li.parent-drop .dropdown {
+  display: none;
+  background-color: #FFFFFF;
+}
+
+li.parent-drop .dropdown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  flex-wrap: nowrap;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+}
+
+li.parent-drop .dropdown ul li {
+  padding: 20px 25px;
+}
+
+li.parent-drop .dropdown ul li:hover {
+  background-color: #FFFFFF;
+}
+
+li.parent-drop:hover .dropdown,
+li.parent-drop:focus .dropdown {
+  display: block;
+}
+
+.jumbotron {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
 }
 
 /*FOOTER*/

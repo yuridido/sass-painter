@@ -18,6 +18,7 @@
 
 
 #head-bottom {
+    height: 50px;
     color: $bianco;
     @include flex(row, space-around, center, nowrap);
 
@@ -27,7 +28,7 @@
         }
     }
 
-    & ul {
+    & #nav {
         list-style: none;
         @include flex(row, space-between, center, nowrap);
         & li {
