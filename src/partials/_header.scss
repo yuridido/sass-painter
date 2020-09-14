@@ -1,0 +1,17 @@
+#head-top {
+    color: $grigioScuro;
+    & ul {
+
+        @include flex(row, flex-end, center, nowrap);
+        list-style: none;
+        & li {
+            padding-left: 10px;
+            & i {
+                color: $blu;
+                margin-right: 5px;
+            }
+        }
+    }
+
+
+}

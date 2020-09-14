@@ -1,0 +1,31 @@
+@mixin btn ($bgBtnColor, $fontSize, $border, $btnColor, $padding) {
+    background-color: $bgBtnColor;
+    font-size: $fontSize;
+    display: inline-block;
+    border: $border;
+    color: $btnColor;
+    padding: $padding;
+    &:hover {
+        background-color: darken($bgBtnColor, 10%);
+        color: lighten($btnColor, 30%);
+    }
+}
+
+
+@mixin flex ($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+
+@mixin icon ($name, $topOrBottom, $y, $leftOrRight, $x) {
+    .icon-#{$name} {
+        background-image: url("/../icons/#{$name}.svg");
+        position: absolute;
+        #{$topOrBottom}: $y;
+        #{$leftOrRight}: $x;
+    }
+}

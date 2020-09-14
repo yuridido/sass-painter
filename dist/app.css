@@ -1,6 +1,64 @@
+/*GENERALE*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #101010;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: blue;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid gray;
+  color: yellow;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: #0000cc;
+  color: #ffff99;
+}
+
+.icona .icon-prova {
+  background-image: url("/../icons/prova.svg");
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/*HEADER*/
+
+#head-top {
+  color: #666666;
+}
+
+#head-top ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+#head-top ul li {
+  padding-left: 10px;
+}
+
+#head-top ul li i {
+  color: #009CFF;
+  margin-right: 5px;
+}
+
+/*FOOTER*/
 

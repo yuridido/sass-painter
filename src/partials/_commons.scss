@@ -3,3 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: $nero;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.btn  {
+    @include btn (blue, 20px, 1px solid gray, yellow, 10px 20px);
+
+}
+
+.icona {
+    @include icon('prova', top, 10px, left, 10px);
+
+}
