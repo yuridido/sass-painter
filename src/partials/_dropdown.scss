@@ -3,8 +3,9 @@ li.parent-drop {
 
     & .dropdown {
         display: none;
-        background-color: $bianco;
         & ul {
+            background-color: $bianco;
+            color: $nero;
             @include flex(column, flex-start, left, nowrap);
             list-style: none;
             position: absolute;

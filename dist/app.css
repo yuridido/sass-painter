@@ -95,10 +95,11 @@ li.parent-drop {
 
 li.parent-drop .dropdown {
   display: none;
-  background-color: #FFFFFF;
 }
 
 li.parent-drop .dropdown ul {
+  background-color: #FFFFFF;
+  color: #101010;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -122,8 +123,22 @@ li.parent-drop:focus .dropdown {
   display: block;
 }
 
-.jumbotron {
+#jumbotron {
+  height: 500px;
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-size: cover;
+}
+
+#nav-stick {
+  height: 50px;
+  background-color: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  height: 1000px;
 }
 
 /*FOOTER*/
