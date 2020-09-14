@@ -60,5 +60,31 @@ body {
   margin-right: 5px;
 }
 
+#head-bottom {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#head-bottom .logo img {
+  width: 90px;
+}
+
+#head-bottom ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#head-bottom ul li {
+  padding: 10px 25px;
+}
+
 /*FOOTER*/
 

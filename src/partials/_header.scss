@@ -15,3 +15,24 @@
 
 
 }
+
+
+#head-bottom {
+    color: $bianco;
+    @include flex(row, space-around, center, nowrap);
+
+    & .logo {
+        & img {
+            width: 90px;
+        }
+    }
+
+    & ul {
+        list-style: none;
+        @include flex(row, space-between, center, nowrap);
+        & li {
+            padding: $paddingBase;
+        }
+
+    }
+}
